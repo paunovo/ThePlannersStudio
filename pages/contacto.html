@@ -1,50 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Planners Studio</title>
-    <link rel="shortcut icon" href="../img/favicon.png">
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Bootstrap CSS -->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous"
+        />
+    
+        <!-- Mi CSS -->
+        <link rel="stylesheet" href="../css/style.css" />
+    
+        <title>The Planners Studio</title>
+        <link rel="shortcut icon" href="../img/favicon.png" />
+    
+      </head>
 
 <body>
-    <div>
-        <header>
-            <a href="../index.html">
-                <img src="../img/logo.png" alt="logo de The Planners Studio">
-            </a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../index.html">HOME</a>
-                    </li>
-                    <li>
-                        <a href="../pages/arquitectura.html">ARQUITECTURA</a>
-                    </li>
-                    <li>
-                        <a href="../pages/urbanismo.html">URBANISMO</a>
-                    </li>
-                    <li>
-                        <a href="../pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="../pages/contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+   
+    <!-- inicio nav con bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img src="../img/logo.png" alt="logo de The Planners Studio" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/arquitectura.html"
+                  >ARQUITECTURA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/urbanismo.html">URBANISMO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- fin nav con bootstrap -->
+
         <main>
-            <div class="flex contacto">
-                <div class="text-left-contact">
-                    <div class="izquierda-texto">
+            <div class="container-fluid my-1 d-flex justify-content-between flex-column">
+              <div class="row">
+                  <div class="col-md-3 col-lg-3 ">
+                    <div>
                         <strong>
                             <p>¿POR QUE NO DECIR</p><p class="hola animate"> HOLA?</p>
                         </strong>
                     </div>
-                    <div class="izquierda-texto">
+                    <div >
                         <p>Contacta con nosotros con el formulario que se encuentra debajo, o simplemente envianos un
                             e-mail:
                             <p>Para proyectos y colaboraciones:
@@ -54,16 +87,16 @@
                             <p>Telefono:
                                 +5491151114234</p>
                     </div>
-                    <div class="izquierda-texto">
+                    <div >
                         <strong>
                             <p>THE PLANNERS STUDIO</p>
                         </strong>
                     </div>
-                    <div class="izquierda-texto">
+                    <div >
                         <p> Av. Corrientes 280, C1043AAP CABA, Argentina</p>
                     </div>
-                    <article class="izquierda-texto">
-                        <p>Horarios laborales:</p>
+                    <article >
+                        <h2>Horarios laborales:</h2>
                         <p>Lun: 9:00AM - 16:00PM</p>
                         <p>Mar: 9:00AM - 16:00PM</p>
                         <p>Mie: 9:00AM - 16:00PM</p>
@@ -72,37 +105,33 @@
                         <p>Sab: 9:00AM - 12:00PM</p>
                     </article>
                 </div>
-                <div>
-                    <div class="mapa">
+                <div class="col-md-9 col-lg-9">
+                    <div>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488.176463272757!2d-58.37100180852824!3d-34.602980498381804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33532b9043ae7%3A0xdad76a7defd6474d!2sAv.%20Corrientes%20280%2C%20C1043AAP%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sde!4v1655476725542!5m2!1ses-419!2sde"
                             width="970px" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <form>
-                        <div class="form formvisible">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" style="width: 46%;">
-                            <label for="correo">Email</label>
-                            <input type="email" id="correo" style="width: 45.5%;">
-                        </div>
-                        <div class="form formhidden">
-                            <label for="name">Nombre</label>
-                            <input type="text" id="name" style="width: 93%;">
-                            <label for="correo">Email</label>
-                            <input type="email" id="correo" style="width: 94%;">
-                        </div>
-                        <div>
-                            <label for="comentario">Deje su mensaje aqui</label>
-                            <textarea name="" id="" cols="135" rows="5"></textarea>
-                        </div>
-                        <div class="text-right button">
-                            <input type="submit" value="ENVIAR MENSAJE">
-                        </div>
-                    </form>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                      <input type="nombre" class="form-control" id="exampleFormControlInput1" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
                 </div>
+              </div> 
             </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end button">
+            <button type="button" class="btn btn-dark">ENVIAR MENSAJE</button>
+          </div>
         </main>
+
         <footer class="text-center">
             <div class="vinculos-redes">
                 <a href="https://pinterest.com" target="_blank">
@@ -126,6 +155,15 @@
             <h3>@ Copyright 2022 - Todos los derechos reservados</h3>
         </footer>
     </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
 </body>
 
 </html>
