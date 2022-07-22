@@ -124,21 +124,8 @@ main div img {
   width: 100%;
 }
 
-div iframe {
-  margin-top: 100px;
-  margin-right: 30px;
-  margin-left: 40px;
-}
-
-div form {
-  margin-right: 30px;
-  margin-left: 40px;
-}
-
-.text-left-contact {
-  margin-top: 100px;
-  width: 24%;
-}
+iframe {  margin: 0;
+  padding: 0;}
 
 .imagenes-ancho {
   width: 98%;
@@ -220,119 +207,7 @@ main {
   visibility: visible;
 }
 
-#grid {
-  width: 98%;
-  display: grid;
-  grid-template-columns: 3, 1fr;
-  grid-template-rows: 3, 1fr;
-  grid-template-areas:
-    "one one two"
-    "three four four"
-    "five five six";
-  margin-left: 25px;
-}
-
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
-}
-
-.four {
-  grid-area: four;
-}
-
-.five {
-  grid-area: five;
-}
-
-.six {
-  grid-area: six;
-}
-
-.hijos {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-
-.one {
-  grid-area: one;
-}
-
-.two {
-  grid-area: two;
-}
-
-.three {
-  grid-area: three;
-}
-
-.four {
-  grid-area: four;
-}
-
-.five {
-  grid-area: five;
-}
-
-.six {
-  grid-area: six;
-}
-
-@media only screen and (max-width: 1330px) {
-  .hijos {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
-
-  .text-left-contact {
-    margin-top: 20px;
-  }
-
-  div iframe {
-    margin-top: 20px;
-    margin-right: 5px;
-    width: 90%;
-  }
-
-  .formvisible {
-    visibility: hidden;
-  }
-
-  .formhidden {
-    visibility: visible;
-  }
-}
-
 @media only screen and (max-width: 890px) {
-  #grid {
-    align-content: stretch;
-    margin-left: 5px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 6, 1fr;
-    grid-template-areas:
-      "one"
-      "two"
-      "three"
-      "four"
-      "five"
-      "six";
-  }
-
-  .hijos {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
 
   nav a img {
     width: 50%;
@@ -353,28 +228,9 @@ main {
     padding: 10px 25px;
   }
 
-  .text-left-contact {
-    width: 100%;
-    margin-right: 25px;
-    margin-left: 25px;
-    display: block;
-  }
-
   div iframe {
     align-content: stretch;
-    margin-top: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    width: 93%;
-    display: block;
-  }
-
-  div form {
-    align-content: stretch;
-    width: 93%;
-    display: block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 5px;
   }
 
   .fotosanimate {
@@ -383,12 +239,6 @@ main {
 
   main div img {
     min-height: 220px;
-  }
-
-  .contacto {
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: relative;
   }
 
   .izquierda-texto {
@@ -412,10 +262,15 @@ main {
   }
 
   .row {
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 5px;
+    margin-left: 5px;
     --bs-gutter-x: 0.7rem;
     --bs-gutter-y: 0.7rem;
   }
 
+  .button {
+    justify-content: center;
+    margin-right: auto;
+    }
+    
 }
