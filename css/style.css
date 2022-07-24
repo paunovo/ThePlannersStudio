@@ -123,6 +123,10 @@ main div img {
   width: 100%;
 }
 
+div figure img {
+  width: 100%;
+}
+
 iframe {
   margin: 0;
   padding: 0;
@@ -136,10 +140,12 @@ iframe {
   display: flex;
   display: inline-block;
 }
+
 .flex1 {
   display: flex;
   display: inline-flex;
 }
+
 .izquierda-texto {
   width: 85%;
   margin-left: 30px;
@@ -162,40 +168,185 @@ div p {
   display: inline-block;
 }
 
+article p {
+  display: block;
+}
+
+/* Comienzo hover en imagenes */
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenedor figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedor figure .capa {
+  position: absolute;
+  left: 1.5%;
+  right: 1.5%;
+  top: 3%;
+  bottom: 3%;
+  background: rgb(255, 255, 255, 0.5);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedor figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedor figure:hover>.capa p {
+  margin-top: 20%;
+}
+
+.contenedor figure:hover>img {
+  transform: scale(1.3);
+}
+
+.contenedor figure .capa p {
+  color: rgb(0, 0, 0);
+  margin-bottom: auto;
+  transition: all 400ms ease-out;
+  font-weight: 700;
+}
+
+.contenedor figure .capa h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/* Final hover en imagenes */
+
+/* Comienzo hover en imagenes chicas */
+
+.contenedorsm {
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorsm figure {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contenedorsm figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.contenedorsm figure .capa {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  top: 3%;
+  bottom: 3%;
+  background: rgb(255, 255, 255, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.contenedorsm figure:hover>.capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contenedorsm figure:hover>.capa p {
+  margin-top: 40%;
+}
+
+.contenedorsm figure:hover>img {
+  transform: scale(1.3);
+}
+
+.contenedorsm figure .capa p {
+  color: rgb(0, 0, 0);
+  margin-bottom: auto;
+  transition: all 400ms ease-out;
+  font-weight: 700;
+}
+
+.contenedorsm figure .capa h3 {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+/* Final hover en imagenes chicas*/
+
+/* Comienzo animacion hola */
+
 .violeta {
   color: blueviolet;
 }
+
 .celeste {
   color: rgb(43, 159, 226);
 }
+
 .verde {
   color: rgb(43, 226, 156);
 }
+
 .amarillo {
   color: rgb(226, 208, 43);
 }
+
 .rosa {
   color: rgb(247, 56, 237);
 }
 
 .hola {
   padding-left: 3px;
-    font-family: "Roboto", sans-serif;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    padding-top: 5px;
-    padding-bottom: 2px;
-    overflow: auto;
-    display: inline-block;
-    font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  overflow: auto;
+  display: inline-block;
+  font-weight: bold;
+  animation-timing-function: ease-in-out;
+  animation-duration: 5s;
 }
 
-.strong {font-weight: bold;}
+.strong {
+  font-weight: bold !important;
+}
 
 .animate {
   animation-timing-function: ease-in-out;
-  animation-duration: 10s;
+  animation-duration: 6s;
 }
+
+/* Final animacion hola */
 
 main {
   width: 100%;
@@ -205,13 +356,15 @@ main {
   visibility: hidden;
 }
 
-.formhidden {
-  visibility: hidden;
-}
-
-.formvisible {
+.visible {
   visibility: visible;
 }
+
+.block {
+  display: block;
+}
+
+/* Comienzo breakpoints */
 
 @media only screen and (max-width: 890px) {
   nav a img {
@@ -246,6 +399,7 @@ main {
     min-height: 220px;
   }
 
+
   .izquierda-texto {
     text-align: center;
     margin-left: 5px;
@@ -278,3 +432,5 @@ main {
     margin-right: auto;
   }
 }
+
+/* Final breakpoints */
