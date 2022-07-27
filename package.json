@@ -1,0 +1,24 @@
+{
+  "name": "tps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paunovo/ThePlannersStudio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paunovo/ThePlannersStudio/issues"
+  },
+  "homepage": "https://github.com/paunovo/ThePlannersStudio#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}

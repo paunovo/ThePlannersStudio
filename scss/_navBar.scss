@@ -1,0 +1,27 @@
+nav {
+    padding-left: 25px;
+    padding-right: 25px;
+
+    ul li a {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: $text-md;
+        font-weight: 300;
+    }
+
+    ul li a:hover {
+        font-weight: bold;
+    }
+}
+
+
+.bg-light {
+    background-color: $bg-color !important;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: $bg-color;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: $bg-color !important;
+}
